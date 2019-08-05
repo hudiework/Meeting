@@ -1,0 +1,446 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="3.0" xmlns="http://java.sun.com/xml/ns/j2ee"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance  http://www.springmodules.org/schema/cache/springmodules-cache.xsd http://www.springmodules.org/schema/cache/springmodules-ehcache.xsd"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee   
+    http://java.sun.com/xml/ns/j2ee/web-app_2_4.xsd       
+  ">
+	<servlet>
+		<servlet-name>AddEvent</servlet-name>
+		<display-name>This is the display name of my J2EE component</display-name>
+		<description>This is the description of my J2EE component</description>
+		<servlet-class>cwu.jsj.servlet.AddEvent</servlet-class>
+	</servlet>
+
+	<servlet>
+		<servlet-name>LoginServlet</servlet-name>
+		<display-name>This is the display name of my J2EE component</display-name>
+		<description>This is the description of my J2EE component</description>
+		<servlet-class>cwu.jsj.servlet.LoginServlet</servlet-class>
+	</servlet>
+
+	<servlet>
+		<servlet-name>RegistServlet</servlet-name>
+		<display-name>This is the display name of my J2EE component</display-name>
+		<description>This is the description of my J2EE component</description>
+		<servlet-class>cwu.jsj.servlet.RegistServlet</servlet-class>
+	</servlet>
+
+	<servlet>
+		<description>This is the description of my J2EE component</description>
+		<display-name>This is the display name of my J2EE component</display-name>
+		<servlet-name>ResetServlet</servlet-name>
+		<servlet-class>cwu.jsj.servlet.ResetServlet</servlet-class>
+	</servlet>
+
+	<servlet>
+		<description>This is the description of my J2EE component</description>
+		<display-name>This is the display name of my J2EE component</display-name>
+		<servlet-name>UploadFileServlet</servlet-name>
+		<servlet-class>cwu.jsj.servlet.UploadFileServlet</servlet-class>
+	</servlet>
+
+	<servlet>
+		<description>This is the description of my J2EE component</description>
+		<display-name>This is the display name of my J2EE component</display-name>
+		<servlet-name>ShowFilesServlet</servlet-name>
+		<servlet-class>cwu.jsj.servlet.ShowFilesServlet</servlet-class>
+	</servlet>
+
+	<servlet>
+		<servlet-name>AddRole</servlet-name>
+		<display-name>This is the display name of my J2EE component</display-name>
+		<description>This is the description of my J2EE component</description>
+		<servlet-class>cwu.jsj.servlet.AddRole</servlet-class>
+	</servlet>
+
+	<servlet>
+		<description>This is the description of my J2EE component</description>
+		<display-name>This is the display name of my J2EE component</display-name>
+		<servlet-name>SetLimitServlet</servlet-name>
+		<servlet-class>cwu.jsj.servlet.SetLimitServlet</servlet-class>
+	</servlet>
+
+	<servlet>
+		<description>This is the description of my J2EE component</description>
+		<display-name>This is the display name of my J2EE component</display-name>
+		<servlet-name>PollingHTTPServlet</servlet-name>
+		<servlet-class>cwu.jsj.servlet.PollingHTTPServlet</servlet-class>
+	</servlet>
+	<servlet>
+		<description>This is the description of my J2EE component</description>
+		<display-name>This is the display name of my J2EE component</display-name>
+		<servlet-name>ChangeLimitServlet</servlet-name>
+		<servlet-class>cwu.jsj.servlet.ChangeLimitServlet</servlet-class>
+	</servlet>
+	<servlet>
+		<description>This is the description of my J2EE component</description>
+		<display-name>This is the display name of my J2EE component</display-name>
+		<servlet-name>PutMeetingDetailServlet</servlet-name>
+		<servlet-class>cwu.jsj.servlet.PutMeetingDetailServlet</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>MeetingPart_MyMeetingServlet</servlet-name>
+		<display-name>This is the display name of my J2EE component</display-name>
+		<description>This is the description of my J2EE component</description>
+		<servlet-class>cwu.jsj.servlet.MeetingPart_MyMeetingServlet</servlet-class>
+	</servlet>
+	
+	
+	<!-- 吴航的servlet -->
+	 <servlet>
+    <servlet-name>JSONServlet</servlet-name>
+    <servlet-class>cwu.jsj.servlet.JSONServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>InsertServlet</servlet-name>
+    <servlet-class>cwu.jsj.servlet.InsertServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>ContentServlet</servlet-name>
+    <servlet-class>cwu.jsj.servlet.ContentServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>MyServlet</servlet-name>
+    <servlet-class>cwu.jsj.servlet.MyServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>SecretaryServlet</servlet-name>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <description>This is the description of my J2EE component</description>
+    <servlet-class>cwu.jsj.servlet.SecretaryServlet</servlet-class>
+  </servlet>
+  
+  
+	
+	<!-- 以下是PC端的servlet -->
+	<servlet>
+		<servlet-name>PCLoginServlet</servlet-name>
+		<display-name>This is the display name of my J2EE component</display-name>
+		<description>This is the description of my J2EE component</description>
+		<servlet-class>cwu.jsj.pc.servlet.PCLoginServlet</servlet-class>
+	</servlet>
+  <servlet>
+    <servlet-name>MeetingDetail</servlet-name>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <description>This is the description of my J2EE component</description>
+    <servlet-class>cwu.jsj.pc.servlet.MeetingDetail</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>UpdateMeeting</servlet-name>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <description>This is the description of my J2EE component</description>
+    <servlet-class>cwu.jsj.pc.servlet.UpdateMeeting</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>DeleteMeeting</servlet-name>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <description>This is the description of my J2EE component</description>
+    <servlet-class>cwu.jsj.pc.servlet.DeleteMeeting</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>ParticipantMeetingServlet</servlet-name>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <description>This is the description of my J2EE component</description>
+    <servlet-class>zmmNew.ParticipantMeetingServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>ParticipantGetChildMeetingServlet</servlet-name>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <description>This is the description of my J2EE component</description>
+    <servlet-class>zmmNew.ParticipantGetChildMeetingServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>ParticipantGetMyChildMeetingServlet</servlet-name>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <description>This is the description of my J2EE component</description>
+    <servlet-class>zmmNew.ParticipantGetMyChildMeetingServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>CheckPhone</servlet-name>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <description>This is the description of my J2EE component</description>
+    <servlet-class>cwu.jsj.servlet.CheckPhone</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>AssignRolesServlet</servlet-name>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <description>This is the description of my J2EE component</description>
+    <servlet-class>cwu.jsj.servlet.AssignRolesServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>InsertSecretaryServlet</servlet-name>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <description>This is the description of my J2EE component</description>
+    <servlet-class>cwu.jsj.servlet.InsertSecretaryServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>AllPeopleServlet</servlet-name>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <description>This is the description of my J2EE component</description>
+    <servlet-class>cwu.jsj.servlet.AllPeopleServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>InsertPeopleServlet</servlet-name>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <description>This is the description of my J2EE component</description>
+    <servlet-class>cwu.jsj.servlet.InsertPeopleServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>SearchServlet</servlet-name>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <description>This is the description of my J2EE component</description>
+    <servlet-class>cwu.jsj.servlet.SearchServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>GetHotelListServlet</servlet-name>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <description>This is the description of my J2EE component</description>
+    <servlet-class>publicResource.GetHotelListServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>createHotel</servlet-name>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <description>This is the description of my J2EE component</description>
+    <servlet-class>publicResource.createHotel</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>deleteHostel</servlet-name>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <description>This is the description of my J2EE component</description>
+    <servlet-class>publicResource.deleteHostel</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>SelectHostel</servlet-name>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <description>This is the description of my J2EE component</description>
+    <servlet-class>publicResource.SelectHostel</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>createSite</servlet-name>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <description>This is the description of my J2EE component</description>
+    <servlet-class>publicResource.createSite</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>deleteSite</servlet-name>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <description>This is the description of my J2EE component</description>
+    <servlet-class>publicResource.deleteSite</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>createCar</servlet-name>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <description>This is the description of my J2EE component</description>
+    <servlet-class>publicResource.createCar</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>LookAllParticipates</servlet-name>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <description>This is the description of my J2EE component</description>
+    <servlet-class>publicResource.LookAllParticipates</servlet-class>
+  </servlet>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	<servlet-mapping>
+		<servlet-name>LoginServlet</servlet-name>
+		<url-pattern>/LoginServlet</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>RegistServlet</servlet-name>
+		<url-pattern>/RegistServlet</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>ResetServlet</servlet-name>
+		<url-pattern>/ResetServlet</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>UploadFileServlet</servlet-name>
+		<url-pattern>/UploadFileServlet</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>ShowFilesServlet</servlet-name>
+		<url-pattern>/ShowFilesServlet</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>AddRole</servlet-name>
+		<url-pattern>/AddRole</url-pattern>
+	</servlet-mapping>
+		<servlet-mapping>
+		<servlet-name>AddEvent</servlet-name>
+		<url-pattern>/AddEvent</url-pattern>
+	</servlet-mapping>
+
+	<!-- 下为蒙蒙的servlet-mapping -->
+	<servlet-mapping>
+		<servlet-name>SetLimitServlet</servlet-name>
+		<url-pattern>/SetLimitServlet</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>PollingHTTPServlet</servlet-name>
+		<url-pattern>/PollingHTTPServlet</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>ChangeLimitServlet</servlet-name>
+		<url-pattern>/ChangeLimitServlet</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>PutMeetingDetailServlet</servlet-name>
+		<url-pattern>/PutMeetingDetailServlet</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>MeetingPart_MyMeetingServlet</servlet-name>
+		<url-pattern>/MeetingPart_MyMeetingServlet</url-pattern>
+	</servlet-mapping>
+	
+	
+	<!--下为吴航的servlet-mapping  -->
+	<servlet-mapping>
+    <servlet-name>JSONServlet</servlet-name>
+    <url-pattern>/JSONServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>InsertServlet</servlet-name>
+    <url-pattern>/InsertServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ContentServlet</servlet-name>
+    <url-pattern>/ContentServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>MyServlet</servlet-name>
+    <url-pattern>/MyServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>InsertSecretaryServlet</servlet-name>
+    <url-pattern>/InsertSecretaryServlet</url-pattern>
+  </servlet-mapping>
+   <servlet-mapping>
+    <servlet-name>SecretaryServlet</servlet-name>
+    <url-pattern>/SecretaryServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>AllPeopleServlet</servlet-name>
+    <url-pattern>/AllPeopleServlet</url-pattern>
+  </servlet-mapping>
+  
+	
+	<!-- 下为PC端的servlet-mapping -->
+	<servlet-mapping>
+		<servlet-name>PCLoginServlet</servlet-name>
+		<url-pattern>/PCLoginServlet</url-pattern>
+	</servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>MeetingDetail</servlet-name>
+    <url-pattern>/MeetingDetail</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>UpdateMeeting</servlet-name>
+    <url-pattern>/UpdateMeeting</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>DeleteMeeting</servlet-name>
+    <url-pattern>/DeleteMeeting</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ParticipantMeetingServlet</servlet-name>
+    <url-pattern>/ParticipantMeetingServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ParticipantGetChildMeetingServlet</servlet-name>
+    <url-pattern>/ParticipantGetChildMeetingServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ParticipantGetMyChildMeetingServlet</servlet-name>
+    <url-pattern>/ParticipantGetMyChildMeetingServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>CheckPhone</servlet-name>
+    <url-pattern>/CheckPhone</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>AssignRolesServlet</servlet-name>
+    <url-pattern>/AssignRolesServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>InsertPeopleServlet</servlet-name>
+    <url-pattern>/InsertPeopleServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>SearchServlet</servlet-name>
+    <url-pattern>/SearchServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>GetHotelListServlet</servlet-name>
+    <url-pattern>/GetHotelListServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>createHotel</servlet-name>
+    <url-pattern>/createHotel</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>deleteHostel</servlet-name>
+    <url-pattern>/deleteHostel</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>SelectHostel</servlet-name>
+    <url-pattern>/SelectHostel</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>createSite</servlet-name>
+    <url-pattern>/createSite</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>deleteSite</servlet-name>
+    <url-pattern>/deleteSite</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>createCar</servlet-name>
+    <url-pattern>/createCar</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>LookAllParticipates</servlet-name>
+    <url-pattern>/LookAllParticipates</url-pattern>
+  </servlet-mapping>
+  
+	
+	
+	
+	<welcome-file-list>
+		<welcome-file>index.jsp</welcome-file>
+	</welcome-file-list>
+
+</web-app>
